@@ -59,3 +59,7 @@ body {
 .favorite {
   font-weight: bold;
 }
+
+#footer {
+  clear: both;
+}
