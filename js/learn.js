@@ -21,22 +21,49 @@ function learnVariables() {
   console.log(nume);
   console.debug("cum te cheama? -" + prenume);
   sayWellcome();
+
+  //schimb valutar
+  var cursEur = 4.5;
+  var myEur = 20;
+  var myRon = 0;
+  var friendEur = 100;
+  var friendRon = 0;
+  //operatori  * / + -
+
+  myRon = myEur * cursEur;
+  console.info("eu am " + myRon + "Ron");
+
+  friendRon = friendEur * cursEur - (friendEur * 1) / 100;
+  console.info("tu ai " + friendRon + "Ron");
 }
+
+function learnIterators() {
+  function countTo(n) {
+    console.info("sa numaram pana la " + n);
+    //for(init; condition; after)
+    for (var i = 1; i <= n; i++) {
+      console.info(i);
+    }
+  }
+  function countDown(n) {
+    var i = n;
+    for (; i > 0; ) {
+      console.info(i);
+      i--;
+    }
+
+    while (n > 0) {
+      console.info(i);
+      n--;
+    }
+  }
+  countTo(10);
+  countDown(10);
+}
+
+learnIterators();
+
 //learnVariables();
-
-//schimb valutar
-var cursEur = 4.5;
-var myEur = 20;
-var myRon = 0;
-var friendEur = 100;
-var friendRon = 0;
-//operatori  * / + -
-
-myRon = myEur * cursEur;
-console.info("eu am " + myRon + "Ron");
-
-friendRon = friendEur * cursEur - (friendEur * 1) / 100;
-console.info("tu ai " + friendRon + "Ron");
 
 var ATMFunds = 50000;
 var funds = 5000;
@@ -80,8 +107,8 @@ function extractFromAtm(amount) {
   console.info("==== ==== ==== ====");
 }
 
-extractFromAtm(1005); // nu e multiplu de 10
-extractFromAtm(100000); // solduri insuficiente
-extractFromAtm(3000);
-extractFromAtm(3000);
-extractFromAtm(100);
+// extractFromAtm(1005); // nu e multiplu de 10
+// extractFromAtm(100000); // solduri insuficiente
+// extractFromAtm(3000);
+// extractFromAtm(3000);
+// extractFromAtm(100);
