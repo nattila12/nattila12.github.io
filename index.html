@@ -19,21 +19,20 @@
 			<p id=motto>Programator web</p>
 			<ul id="top-menu-bar">
 				<li>
-					<a href="#">HOME</a>
+					<a href="#" id="home-menu">HOME</a>
 				</li>
 				<li>
-					<a href="#">Skills</a>
+					<a href="#" id="skills-menu">Skills</a>
 				</li>
 				<li>
-					<a href="#">Limbi Cunoscute</a>
+					<a href="#" id="languages-menu">Limbi Cunoscute</a>
 				</li>
-				<li>
-					<a href="#">Contact</a>
-				</li>
+				
 			</ul>
 		</div>
 		<div class="teest" id="content-wrap">
 			<div class="teest" id="left-sidebar">
+				
 				<!-- <div class="test" id="news">News</div> -->
 				<div class="teest" id="contact">
 					<h2>Contact</h2>
@@ -49,7 +48,12 @@
 			</div>
 			<div class="teest" id="content">
 				<div class="teest"> 
-					<div class=" page-block">
+						<div class="page-block" id="home-page">
+								<h2>Wellcome</h2>
+								<p>About me...</p>
+			
+							</div>
+					<div class=" page-block" id="skills-page" style="display:none;">
 						<h2>Skills:</h2>
 						<ul>
 							<li class="=favorite"> HTML</li>
@@ -57,7 +61,7 @@
 							<li class="favorite"> JS</li>
 						</ul>
 					</div>
-					<div class="page-block">
+					<div class="page-block" id="languages-page" style="display:none;">
 						<h5>Limbi cunoscute </h5>
 						<ul>
 							<li>Limba materna: Maghiara</li>
@@ -105,7 +109,10 @@
 
 		<div id="app"></div>
 
-		<!-- <script src="src/index.js"></script> -->
-		<script src="js/learn.js"></script>
+		<script src="src/index.js"></script>
+		<!-- <script src="js/learn.js"></script> -->
 	</body>
+	<div class="teest" id="foter">
+			<a href="https://www.linkedin.com/in/nagy-attila-53b77b171/">linkedin</a>
+		</div>
 </html>
