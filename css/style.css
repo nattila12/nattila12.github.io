@@ -21,6 +21,7 @@ body {
 }
 
 .page-block {
+  display: none;
   background-color: white;
   padding: 24px;
   margin: 10px;
