@@ -10,15 +10,13 @@ function show(id){
   $(id).style.display = "block";
 }
 
-
+function hideElement(el){
+  el.style.display = "none";
+}
 
 function hideAllPages(){
   var pages = document.querySelectorAll(".page-block");
-  pages.forEach(function(page){
-    
-    page.style.display = "none";
-
-  });
+  pages.forEach(hideElement);
   
 }
 
