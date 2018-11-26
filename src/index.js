@@ -21,15 +21,33 @@ function hideAllPages(){
 }
 
 
-var links = document.querySelectorAll("#top-menu-bar a");
-for(var i=0; i<links.length; i++ ){
-  //console.log(links[i].getAttribute('data-page'), links[i]);
-  links[i].onclick = function(){
-    console.warn('hide all pages');
-    hideAllPages();
-    var page = this.getAttribute('data-page');
-    show(page + "-page");
+function initMenu(){
+  var links = document.querySelectorAll("#top-menu-bar a");
+ for(var i=0; i<links.length; i++ ){
+   //console.log(links[i].getAttribute('data-page'), links[i]);
+   links[i].onclick = function(){
+     console.warn('hide all pages');
+     hideAllPages();
+     var page = this.getAttribute('data-page');
+     show(page + "-page");
+    }
   }
+
 }
 
-show("home-page");
+
+function initSkillsPage(){
+  var skills = ['js', 'html' , 'css'];
+  var resultList = document.querySelector('#skills-page ul');
+
+  var listItems = skills.map(function(skill) {
+    return `<li>${skill.toUpperCase()}</li>`;
+  })
+
+  resultList.innerHTML = listItems.join('');
+
+}
+
+initMenu();
+show("skills-page");
+initSkillsPage();
