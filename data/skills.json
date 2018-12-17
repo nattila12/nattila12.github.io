@@ -1,0 +1,17 @@
+[
+    {
+        "name": "js",
+        "endorsments": 7,
+        "endorsedBy": "Andrei"
+    },
+    {
+        "name": "html",
+        "endorsments": 6,
+        "endorsedBy": "Andrea"
+    },
+    {
+        "name": "css",
+        "endorsments": 2,
+        "endorsedBy": ""
+    }
+]
