@@ -13,5 +13,10 @@
         "name": "css",
         "endorsments": 2,
         "endorsedBy": ""
+    },
+    {
+        "name": "SQL",
+        "endorsments": 5,
+        "endorsedBy": ""
     }
 ]

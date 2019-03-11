@@ -68,3 +68,6 @@ body {
   width: 110px;
   padding: 7px;
 }
+#img{
+  border-radius: 10px;
+}
